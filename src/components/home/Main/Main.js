@@ -6,7 +6,7 @@ import Menu from '../Menu/Menu';
 import Button from '../Button/Button';
 
 const Styledmain = styled.div`
-    height: 100vh;
+    height: 500px;
     display: flex;
 `;
 
