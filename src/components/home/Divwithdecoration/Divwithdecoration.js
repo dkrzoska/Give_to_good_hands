@@ -9,6 +9,8 @@ const Styleddiv = styled.div`
     flex-direction: column;
     align-items: center;
     p {
+        font-size: ${props => props.fontsize};
+        line-height: ${props => props.lineheight};
         display: inline-block;
     }
     img {
@@ -20,7 +22,7 @@ const Styleddiv = styled.div`
 
 function Divwithdecoration({ children, fontsize, lineheight }) {
     return (
-        <Styleddiv style={{ fontSize: fontsize, lineHeight: lineheight }}>
+        <Styleddiv fontsize= {fontsize} lineheight= {lineheight}>
             {children}
             <img src={decoration}></img>
         </Styleddiv>

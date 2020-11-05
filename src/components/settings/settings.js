@@ -9,9 +9,9 @@ export const fonts = {
 }
 
 export const colors = {
-    bg_color_white: `#F0F1F1`,
-    bg_color_gray: `#737373`,
-    bg_color_yellow: `#FAD648`,
+    color_white: `#F0F1F1`,
+    color_gray: `#737373`,
+    color_yellow: `#FAD648`,
     color_dark_gray: `#3C3C3C`,
-    font_color_bronze: `#5E5322`
+    color_bronze: `#5E5322`
 }

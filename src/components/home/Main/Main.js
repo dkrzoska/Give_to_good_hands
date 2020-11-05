@@ -4,6 +4,7 @@ import Divwithdecoration from '../Divwithdecoration/Divwithdecoration';
 import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
 import Button from '../Button/Button';
+import { colors } from '../../settings/settings';
 
 const Styledmain = styled.div`
     height: 500px;
@@ -21,7 +22,7 @@ const Styledrightdiv = styled.div`
 `;
 
 const Styleddivwithbuttons = styled.div`
-
+    display: flex;
 `;
 
 function Main() {
@@ -36,8 +37,34 @@ function Main() {
                     <p>Oddaj niechciane rzeczy w zaufane ręce</p>
                 </Divwithdecoration>
                 <Styleddivwithbuttons>
-                    <Button fontsize='20px'>oddaj rzeczy</Button>
-                    <Button>zoragnizuj zbiórkę</Button>
+                    <Button
+                        height='120px'
+                        width='310px'
+                        fontsize='36px'
+                        fontcolor={colors.color_dark_gray}
+                        fontweight='300'
+                        texttransform='uppercase'
+                        border='0.75px solid'
+                        bordercolor={colors.color_dark_gray}
+                        margin='0 22px'
+                    >
+                        <p>oddaj</p>
+                        <p>rzeczy</p>
+                    </Button>
+                    <Button
+                        height='120px'
+                        width='310px'
+                        fontsize='36px'
+                        fontcolor={colors.color_dark_gray}
+                        fontweight='300'
+                        texttransform='uppercase'
+                        border='0.75px solid'
+                        bordercolor={colors.color_dark_gray}
+                        margin='0 22px'
+                    >
+                        <p>zoragnizuj</p>
+                        <p>zbiórkę</p>
+                    </Button>
                 </Styleddivwithbuttons>
             </Styledrightdiv>
         </Styledmain>
