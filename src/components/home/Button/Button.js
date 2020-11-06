@@ -4,13 +4,10 @@ import { fonts } from '../../settings/settings';
 
 const Styledbutton = styled.div`
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         box-sizing: border-box;
         height: ${props => props.height};
         width: ${props => props.width};
-        font-family: ${fonts.font_base};
+        // font-family: ${fonts.font_base};
         font-size: ${props => props.fontsize};
         color: ${props => props.fontcolor};
         font-weight: ${props => props.fontweight};

@@ -4,19 +4,19 @@ import decoration from "../../../assets/Decoration.svg";
 
 const Styleddiv = styled.div`
     {
-    height: 165px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p {
-        font-size: ${props => props.fontsize};
-        line-height: ${props => props.lineheight};
-        display: inline-block;
-    }
-    img {
-        height: 33px;
-        justify-self: flex-end;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 34px;
+        p {
+            font-size: ${props => props.fontsize};
+            line-height: ${props => props.lineheight};
+            display: inline-block;
+        }
+        img {
+            height: 33px;
+            justify-self: flex-end;
+        }
     }
 `;
 

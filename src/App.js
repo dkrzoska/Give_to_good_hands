@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
 import Main from './components/home/Main/Main';
@@ -7,9 +8,15 @@ import Whowehelp from './components/home/Whowehelp/Whowehelp';
 import Contact from './components/home/Contact/Contact';
 import Footer from './components/home/Footer/Footer';
 
+const Styledcontainer = styled.div`
+    {
+      width: 1900px;
+    }
+`;
+
 function App() {
   return (
-    <>
+    <Styledcontainer>
       <Main />
       <Whatisgoingon />
       <Aboutus />
@@ -32,7 +39,7 @@ function App() {
         </a>
         </header>
       </div> */}
-    </>
+    </Styledcontainer>
   );
 }
 

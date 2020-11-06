@@ -5,59 +5,35 @@ import { colors } from '../../settings/settings';
 
 const Styledmenu = styled.div`
     display: flex;
+    justify-content: flex-end;
+    margin-bottom: 210px;
 `;
+
+const buttonprops = {
+    fontsize: '18px',
+    fontcolor: colors.color_dark_gray,
+    border: '0.75px solid #fff',
+    borderhover: '0.75px solid',
+    bordercolorhover: colors.color_dark_gray,
+    padding: '9px 20px'
+}
 
 function Menu() {
     return (
         <Styledmenu>
-            <Button
-                fontsize='18px'
-                fontcolor={colors.color_dark_gray}
-                border='0.75px solid #fff'
-                borderhover='0.75px solid'
-                bordercolorhover={colors.color_dark_gray}
-                padding='9px 20px'
-            >
+            <Button {...buttonprops} >
                 Start
             </Button>
-            <Button
-                fontsize='18px'
-                fontcolor={colors.color_dark_gray}
-                border='0.75px solid #fff'
-                borderhover='0.75px solid'
-                bordercolorhover={colors.color_dark_gray}
-                padding='9px 20px'
-            >
+            <Button {...buttonprops} >
                 O co chodzi?
             </Button>
-            <Button
-                fontsize='18px'
-                fontcolor={colors.color_dark_gray}
-                border='0.75px solid #fff'
-                borderhover='0.75px solid'
-                bordercolorhover={colors.color_dark_gray}
-                padding='9px 20px'
-            >
+            <Button {...buttonprops} >
                 O nas
                 </Button>
-            <Button
-                fontsize='18px'
-                fontcolor={colors.color_dark_gray}
-                border='0.75px solid #fff'
-                borderhover='0.75px solid'
-                bordercolorhover={colors.color_dark_gray}
-                padding='9px 20px'
-            >
+            <Button {...buttonprops} >
                 Fundacja i organizacje
             </Button>
-            <Button
-                fontsize='18px'
-                fontcolor={colors.color_dark_gray}
-                border='0.75px solid #fff'
-                borderhover='0.75px solid'
-                bordercolorhover={colors.color_dark_gray}
-                padding='9px 20px'
-            >
+            <Button {...buttonprops} >
                 Kontakt
             </Button>
         </Styledmenu>
