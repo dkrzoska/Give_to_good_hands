@@ -8,10 +8,11 @@ const Styleddiv = styled.div`
         flex-direction: column;
         align-items: center;
         margin-bottom: 34px;
-        p {
+        > * {
             font-size: ${props => props.fontsize};
             line-height: ${props => props.lineheight};
             display: inline-block;
+            margin-bottom: 25px;
         }
         img {
             height: 33px;
