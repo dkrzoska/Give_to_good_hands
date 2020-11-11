@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import styled from 'styled-components';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import "./scss/main.scss";
+// import './index.css';
+import '../node_modules/reset-css/reset.css';
+import { colors, fonts} from './components/settings/settings';
+
+const Basestyle = styled.div `
+* {
+    font-family: ${fonts.font_base};
+    color: ${colors.color_dark_gray};
+}`
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Basestyle>
+      <App />
+    </Basestyle>
   </React.StrictMode>,
   document.getElementById('root')
 );

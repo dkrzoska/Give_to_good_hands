@@ -15,9 +15,3 @@ export const colors = {
     color_dark_gray: `#3C3C3C`,
     color_bronze: `#5E5322`
 }
-
-// createGlobalStyle`
-// body {
-//     font-family: ${fonts.font_base};
-//     color: colors.color_dark_gray;
-// }`

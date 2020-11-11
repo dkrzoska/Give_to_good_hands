@@ -46,7 +46,7 @@ function Aboutus() {
                         Bunya nuts black-eyed pea prairie turnip leek
                         lentil turnip greens parsnip.
                     </p>
-                    <img className='signature' src={signature} />
+                    <img className='signature' src={signature} alt='signature'/>
             </div>
             <div className='rightdiv'></div>
         </Styledaboutus>

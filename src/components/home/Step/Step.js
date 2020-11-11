@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {colors} from '../../settings/settings';
 
 const Styledstep = styled.div`
     {
@@ -35,7 +34,7 @@ function Step({icon, step, description, fontsizeh6, lineheighth6, fontsizep, lin
             fontsizep={fontsizep}
             lineheightp={lineheightp}
         >
-            <img src={icon} />
+            <img src={icon} alt='icon'/>
             <h6>{step}</h6>
             <div></div>
             <p>{description}</p>

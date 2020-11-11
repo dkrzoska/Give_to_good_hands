@@ -25,7 +25,7 @@ function Divwithdecoration({ children, fontsize, lineheight }) {
     return (
         <Styleddiv fontsize= {fontsize} lineheight= {lineheight}>
             {children}
-            <img src={decoration}></img>
+            <img src={decoration} alt='decoration'></img>
         </Styleddiv>
     )
 }

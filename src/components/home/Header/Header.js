@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Button from '../Button/Button';
 import { colors } from '../../settings/settings';

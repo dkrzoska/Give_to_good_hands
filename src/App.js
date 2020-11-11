@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Main from './components/home/Main/Main';
 import Whatisgoingon from './components/home/Whatisgoingon/Whatisgoingon';
