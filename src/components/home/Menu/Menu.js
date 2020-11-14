@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../Button/Button';
 import styled from 'styled-components';
 import { colors } from '../../settings/settings';
+import { Link } from 'react-router-dom';
 
 const Styledmenu = styled.div`
     display: flex;
@@ -22,13 +23,13 @@ function Menu() {
     return (
         <Styledmenu>
             <Button {...buttonprops} >
-                Start
+                <Link to='/'>Start</Link>
             </Button>
             <Button {...buttonprops} >
-                O co chodzi?
+                <Link to='whatisgoingon'>O co chodzi?</Link>
             </Button>
             <Button {...buttonprops} >
-                O nas
+                <Link to='aboutus'>O nas</Link>
                 </Button>
             <Button {...buttonprops} >
                 Fundacja i organizacje

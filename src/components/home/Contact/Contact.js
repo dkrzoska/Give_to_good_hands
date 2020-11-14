@@ -41,6 +41,7 @@ const Styleddiv = styled.div`
                     width: 256px;
                     font-size: 16px;
                     line-height: 22px;
+                    margin-bottom: 40px;
                     input {
                         box-sizing: border-box;
                         width: 100%;

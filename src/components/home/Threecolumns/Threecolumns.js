@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Column from '../Column/Column';
-import { colors } from '../../settings/settings';
+// import { colors } from '../../settings/settings';
+import background from '../../../assets/3-Columns-Background.png';
 
 const Styledthreecolumns = styled.div`
     {
         display: flex;
         justify-content: space-around;
-        background: ${colors.color_yellow};
+        background: url(${background});
         margin: 0 0 55px 0;
         padding: 46px 0 86px 0;
     }
