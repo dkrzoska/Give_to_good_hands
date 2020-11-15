@@ -5,6 +5,8 @@ import Aboutus from './components/home/Aboutus/Aboutus';
 import Whowehelp from './components/home/Whowehelp/Whowehelp';
 import Contact from './components/home/Contact/Contact';
 import { BrowserRouter, HashRouter, Route, Link} from 'react-router-dom';
+import Login from './components/login/Login/Login';
+import Register from './components/register/Register/Register';
 
 const Styledcontainer = styled.div`
     {
@@ -15,7 +17,8 @@ const Styledcontainer = styled.div`
 function App() {
   return (
     <Styledcontainer>
-      <HashRouter>
+      <Register />
+      {/* <HashRouter>
         <Route path="/">
           <Main />
         </Route>
@@ -30,13 +33,13 @@ function App() {
         </Route>
         <Route path="contact">
           <Contact />
-        </Route>
+        </Route> */}
         {/* <Main />
         <Whatisgoingon />
         <Aboutus />
         <Whowehelp />
         <Contact /> */}
-      </HashRouter>
+      {/* </HashRouter> */}
     </Styledcontainer>
   );
 }

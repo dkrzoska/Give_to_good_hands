@@ -23,13 +23,16 @@ function Menu() {
     return (
         <Styledmenu>
             <Button {...buttonprops} >
-                <Link to='/'>Start</Link>
+                Start
+                {/* <Link to='/'>Start</Link> */}
             </Button>
             <Button {...buttonprops} >
-                <Link to='whatisgoingon'>O co chodzi?</Link>
+                O co chodzi?
+                {/* <Link to='whatisgoingon'>O co chodzi?</Link> */}
             </Button>
             <Button {...buttonprops} >
-                <Link to='aboutus'>O nas</Link>
+                O nas
+                {/* <Link to='aboutus'>O nas</Link> */}
                 </Button>
             <Button {...buttonprops} >
                 Fundacja i organizacje
