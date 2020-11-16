@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Button from '../../home/Button/Button';
 import Divwithdecoration from '../../home/Divwithdecoration/Divwithdecoration';
@@ -70,8 +71,8 @@ function Login() {
             <div className='login-main'>
                 <form>
                     <div className='login-and-pass'>
-                        <label htmlFor="name">Email<br />
-                            <input type="email" id="email" name="email" />
+                        <label htmlFor="email2">Email<br />
+                            <input type="email" id="email2" name="email2" />
                         </label><br />
                         <label htmlFor="email">Hasło<br />
                             <input type="password" id="password" name="password" />
@@ -79,7 +80,7 @@ function Login() {
                     </div>
                     <div className='buttons'>
                         <Button {...buttonprops}>
-                            <p>Załóż konto</p>
+                            <p><Link to="/register">Załóż konto</Link></p>
                         </Button>
                         <Button {...buttonprops} bordercolor= {colors.color_dark_gray}>
                             <p>Zaloguj się</p>

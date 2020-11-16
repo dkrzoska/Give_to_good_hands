@@ -4,10 +4,10 @@ import Whatisgoingon from './components/home/Whatisgoingon/Whatisgoingon';
 import Aboutus from './components/home/Aboutus/Aboutus';
 import Whowehelp from './components/home/Whowehelp/Whowehelp';
 import Contact from './components/home/Contact/Contact';
+import Login from './components/login/Login/Login';
 import Logout from './components/login/Logout/Logout';
+import Register from './components/register/Register/Register';
 import { BrowserRouter, HashRouter, Route, Switch, Link } from 'react-router-dom';
-// import Login from './components/login/Login/Login';
-// import Register from './components/register/Register/Register';
 
 const Styledcontainer = styled.div`
     {
@@ -18,17 +18,22 @@ const Styledcontainer = styled.div`
 function App() {
   return (
     <Styledcontainer>
-      <Logout />
-      {/* <Register /> */}
-      {/* <HashRouter>
+      <BrowserRouter>
         <div>
-          <Route path="/" component={Main} />
-          <Route path="/whatisgoingon" component={Whatisgoingon} />
-          <Route path="/aboutus" component={Aboutus} />
-          <Route path="/whowehelp" component={Whowehelp} />
-          <Route path="/contact" component={Contact} />
+          <Route exact path="/">
+            <Main />
+            <Whatisgoingon />
+            <Aboutus />
+            <Whowehelp />
+            <Contact />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/logout" component={Logout} />
+          <Route path="/register" component={Register} />
         </div>
-      </HashRouter> */}
+      </BrowserRouter>
       {/* <Main />
       <Whatisgoingon />
       <Aboutus />

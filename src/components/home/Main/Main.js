@@ -6,6 +6,7 @@ import Menu from '../Menu/Menu';
 import Button from '../Button/Button';
 import { colors } from '../../settings/settings';
 import homeheroimage from '../../../assets/Home-Hero-Image.jpg';
+import { Link } from 'react-router-dom';
 
 const Styledmain = styled.div`
     height: 963px;
@@ -29,8 +30,7 @@ const Styleddivwithbuttons = styled.div`
         justify-content: center;
         margin-top: 31px;
         p {
-            display: flex;
-            justify-content: center;
+            text-align: center;
             line-height: 47px;
         }
     }
@@ -62,12 +62,10 @@ function Main() {
                 </Divwithdecoration>
                 <Styleddivwithbuttons>
                     <Button {...buttonprops} >
-                        <p>oddaj</p>
-                        <p>rzeczy</p>
+                        <p><Link to="/login">oddaj<br/>rzeczy</Link></p>
                     </Button>
                     <Button {...buttonprops} >
-                        <p>zoragnizuj</p>
-                        <p>zbiórkę</p>
+                        <p><Link to="/login">zoragnizuj<br/>zbiórkę</Link></p>
                     </Button>
                 </Styleddivwithbuttons>
             </Styledrightdiv>

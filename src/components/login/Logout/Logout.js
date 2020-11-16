@@ -9,11 +9,22 @@ import { colors } from '../../settings/settings';
 const Styleddiv = styled.div`
 {
     width: 1858px;
+    .logout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 440px;
+        margin: 0 auto;
+        p {
+            text-align: center;
+        }
+    }
 }
 `
 
 const buttonprops = {
     height: '50px',
+    width: '150px',
     fontsize: '18px',
     fontcolor: colors.color_dark_gray,
     border: '0.75px solid #fff',
@@ -27,12 +38,15 @@ function Login() {
         <Styleddiv>
             <Header />
             <Menu />
-            <Divwithdecoration fontsize='40px' lineheight='55px'>
-                <p>Wylogowanie nastąpiło pomyślnie!</p>
-            </Divwithdecoration>
-            <Button {...buttonprops}>
-                <p>Strona główna</p>
-            </Button>
+            <div className='logout'>
+                <Divwithdecoration fontsize='40px' lineheight='55px'>
+                    <p>Wylogowanie nastąpiło pomyślnie!</p>
+                </Divwithdecoration>
+                <Button {...buttonprops}>
+                    <p>Strona główna</p>
+                </Button>
+            </div>
+
         </Styleddiv>
     )
 }

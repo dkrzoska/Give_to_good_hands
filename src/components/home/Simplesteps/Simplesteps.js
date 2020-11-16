@@ -8,6 +8,7 @@ import icon1 from '../../../assets/Icon-1.svg';
 import icon2 from '../../../assets/Icon-2.svg';
 import icon3 from '../../../assets/Icon-3.svg';
 import icon4 from '../../../assets/Icon-4.svg';
+import { Link } from 'react-router-dom';
 
 const Styledsimplesteps = styled.div`
     {
@@ -21,9 +22,8 @@ const Styledsimplesteps = styled.div`
                 padding: 73px 328px 0 328px;
             }
         .button__p {
-            display: flex;
-            justify-content: center;
             line-height: 47px;
+            text-align: center;
         }
     }
 `;
@@ -82,8 +82,7 @@ function Simplesteps() {
 
             </div>
             <Button {...buttonprops} >
-                <p className='button__p'>oddaj</p>
-                <p className='button__p'>rzeczy</p>
+                <p className='button__p'><Link to="/login">oddaj<br/>rzeczy</Link></p>
             </Button>
         </Styledsimplesteps>
     )

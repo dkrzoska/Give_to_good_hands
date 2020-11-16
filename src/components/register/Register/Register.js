@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Button from '../../home/Button/Button';
 import Divwithdecoration from '../../home/Divwithdecoration/Divwithdecoration';
@@ -69,19 +70,19 @@ function Register() {
             <div className='login-main'>
                 <form>
                     <div className='login-and-pass'>
-                        <label htmlFor="name">Email<br />
-                            <input type="email" id="email" name="email" />
+                        <label htmlFor="email3">Email<br />
+                            <input type="email" id="email3" name="email3" />
                         </label><br />
                         <label htmlFor="password">Hasło<br />
                             <input type="password" id="password" name="password" />
                         </label>
-                        <label htmlFor="password">Powtórz hasło<br />
-                            <input type="password" id="password" name="password" />
+                        <label htmlFor="password2">Powtórz hasło<br />
+                            <input type="password" id="password2" name="password2" />
                         </label>
                     </div>
                     <div className='buttons'>
                         <Button {...buttonprops}>
-                            <p>Zaloguj się</p>
+                            <p><Link to="/login">Zaloguj się</Link></p>
                         </Button>
                         <Button {...buttonprops} bordercolor= {colors.color_dark_gray}>
                             <p>Załóż konto</p>

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../Button/Button';
 import { colors } from '../../settings/settings';
+import { Link } from 'react-router-dom';
 
 const Styledheader = styled.div`
     display: flex;
@@ -22,10 +23,10 @@ function Header() {
     return (
         <Styledheader>
             <Button {...buttonprops} >
-                Zaloguj
+                <Link to="/login">Zaloguj</Link>
             </Button>
             <Button {...buttonprops}  >
-                Załóż konto
+                <Link to="/register">Załóż konto</Link>
             </Button>
         </Styledheader>
     )
