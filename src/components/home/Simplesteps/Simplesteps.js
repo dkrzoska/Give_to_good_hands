@@ -82,7 +82,7 @@ function Simplesteps() {
 
             </div>
             <Button {...buttonprops} >
-                <p className='button__p'><Link to="/login">oddaj<br/>rzeczy</Link></p>
+                <p className='button__p'><Link to="/logowanie">oddaj<br/>rzeczy</Link></p>
             </Button>
         </Styledsimplesteps>
     )

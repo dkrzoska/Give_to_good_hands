@@ -4,6 +4,7 @@ import Button from '../../home/Button/Button';
 import Divwithdecoration from '../../home/Divwithdecoration/Divwithdecoration';
 import Header from '../../home/Header/Header';
 import Menu from '../../home/Menu/Menu';
+import { Link } from 'react-router-dom';
 import { colors } from '../../settings/settings';
 
 const Styleddiv = styled.div`
@@ -43,7 +44,7 @@ function Login() {
                     <p>Wylogowanie nastąpiło pomyślnie!</p>
                 </Divwithdecoration>
                 <Button {...buttonprops}>
-                    <p>Strona główna</p>
+                    <p><Link to="/">Strona główna</Link></p>
                 </Button>
             </div>
 

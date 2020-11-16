@@ -80,7 +80,7 @@ function Login() {
                     </div>
                     <div className='buttons'>
                         <Button {...buttonprops}>
-                            <p><Link to="/register">Załóż konto</Link></p>
+                            <p><Link to="/rejestracja">Załóż konto</Link></p>
                         </Button>
                         <Button {...buttonprops} bordercolor= {colors.color_dark_gray}>
                             <p>Zaloguj się</p>

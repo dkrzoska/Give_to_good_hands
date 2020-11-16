@@ -23,10 +23,10 @@ function Header() {
     return (
         <Styledheader>
             <Button {...buttonprops} >
-                <Link to="/login">Zaloguj</Link>
+                <Link to="/logowanie">Zaloguj</Link>
             </Button>
             <Button {...buttonprops}  >
-                <Link to="/register">Załóż konto</Link>
+                <Link to="/rejestracja">Załóż konto</Link>
             </Button>
         </Styledheader>
     )

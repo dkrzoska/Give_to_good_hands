@@ -62,10 +62,10 @@ function Main() {
                 </Divwithdecoration>
                 <Styleddivwithbuttons>
                     <Button {...buttonprops} >
-                        <p><Link to="/login">oddaj<br/>rzeczy</Link></p>
+                        <p><Link to="/logowanie">oddaj<br/>rzeczy</Link></p>
                     </Button>
                     <Button {...buttonprops} >
-                        <p><Link to="/login">zoragnizuj<br/>zbiórkę</Link></p>
+                        <p><Link to="/logowanie">zoragnizuj<br/>zbiórkę</Link></p>
                     </Button>
                 </Styleddivwithbuttons>
             </Styledrightdiv>

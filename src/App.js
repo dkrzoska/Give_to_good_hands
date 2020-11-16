@@ -27,11 +27,11 @@ function App() {
             <Whowehelp />
             <Contact />
           </Route>
-          <Route path="/login">
+          <Route path="/logowanie">
             <Login />
           </Route>
-          <Route path="/logout" component={Logout} />
-          <Route path="/register" component={Register} />
+          <Route path="/wylogowanie" component={Logout} />
+          <Route path="/rejestracja" component={Register} />
         </div>
       </BrowserRouter>
       {/* <Main />

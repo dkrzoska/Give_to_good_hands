@@ -82,7 +82,7 @@ function Register() {
                     </div>
                     <div className='buttons'>
                         <Button {...buttonprops}>
-                            <p><Link to="/login">Zaloguj się</Link></p>
+                            <p><Link to="/logowanie">Zaloguj się</Link></p>
                         </Button>
                         <Button {...buttonprops} bordercolor= {colors.color_dark_gray}>
                             <p>Załóż konto</p>
