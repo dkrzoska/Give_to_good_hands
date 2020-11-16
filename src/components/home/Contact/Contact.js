@@ -78,7 +78,7 @@ const Styleddiv = styled.div`
 
 function Contact() {
     return (
-        <Styleddiv>
+        <Styleddiv id='contact'>
             <div className='div-right'>
                 <Divwithdecoration fontsize='38px' lineheight='55px'>
                     <p>Skontaktuj się z nami</p>

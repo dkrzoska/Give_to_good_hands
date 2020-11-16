@@ -35,7 +35,7 @@ const Styledaboutus = styled.div`
 
 function Aboutus() {
     return (
-        <Styledaboutus>
+        <Styledaboutus id='aboutus'>
             <div className='leftdiv'>
                 <Divwithdecoration fontsize='38px' lineheight='55px'>
                     <p> O nas</p>

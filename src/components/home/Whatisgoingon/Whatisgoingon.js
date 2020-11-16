@@ -4,7 +4,7 @@ import Simplesteps from '../Simplesteps/Simplesteps';
 
 function Whatisgoingon() {
     return (
-        <div>
+        <div id='whatisgoingon'>
             <Threecolumns />
             <Simplesteps />
         </div>

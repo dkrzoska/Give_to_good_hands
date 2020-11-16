@@ -51,7 +51,7 @@ const buttonprops = {
 
 function Main() {
     return (
-        <Styledmain>
+        <Styledmain id='start'>
             <Styledleftdiv />
             <Styledrightdiv>
                 <Header />

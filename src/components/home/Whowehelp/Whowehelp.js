@@ -179,7 +179,7 @@ function Whowehelp() {
 
 
     return (
-        <Styledwhowehelp>
+        <Styledwhowehelp id='whowehelp'>
             <Divwithdecoration fontsize='38px' lineheight='55px'>
                 <p>Komu pomagamy?</p>
             </Divwithdecoration>

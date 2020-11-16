@@ -23,22 +23,19 @@ function Menu() {
     return (
         <Styledmenu>
             <Button {...buttonprops} >
-                Start
-                {/* <Link to='/'>Start</Link> */}
+                <a href='#start'>Start</a>
             </Button>
             <Button {...buttonprops} >
-                O co chodzi?
-                {/* <Link to='whatisgoingon'>O co chodzi?</Link> */}
+                <a href='#whatisgoingon'>O co chodzi?</a>
             </Button>
             <Button {...buttonprops} >
-                O nas
-                {/* <Link to='aboutus'>O nas</Link> */}
-                </Button>
-            <Button {...buttonprops} >
-                Fundacja i organizacje
+                <a href='#aboutus'>O nas</a>
             </Button>
             <Button {...buttonprops} >
-                Kontakt
+                <a href='#whowehelp'>Fundacja i organizacje</a>
+            </Button>
+            <Button {...buttonprops} >
+                <a href='#contact'>Kontakt</a>
             </Button>
         </Styledmenu>
     )
