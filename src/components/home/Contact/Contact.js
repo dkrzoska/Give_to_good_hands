@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Divwithdecoration from '../Divwithdecoration/Divwithdecoration';
 import Button from '../Button/Button';
@@ -20,8 +20,10 @@ const Styleddiv = styled.div`
         form {
             margin-top: 70px;
             .error-message {
+                height: 18px;
                 color: red;
                 font-weight: 600;
+                line-height: 18px;
             }
             label {
                 font-weight: 600;
@@ -29,7 +31,7 @@ const Styleddiv = styled.div`
             input {
                 background: none;
                 font-size: 18px;
-                line-height: 24px;
+                line-height: 22px;
                 border: none;
                 border-bottom: 1px solid #707070;
                 outline: none;
@@ -40,7 +42,7 @@ const Styleddiv = styled.div`
             .name-and-email {
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 24px;
+                margin-bottom: 22px;
                 label {
                     height: 62px;
                     width: 256px;
@@ -83,32 +85,71 @@ const Styleddiv = styled.div`
 `
 
 function Contact() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [text, setText] = useState('');
+    const [error, setError] = useState({ name: '', email: '', text: '' });
+
+    const handlechangename = ev => {
+        setError('');
+        setName(ev.target.value);
+    }
+
+    const handlechangeemail = ev => {
+        setError('');
+        setEmail(ev.target.value);
+    }
+
+    const handlechangetext = ev => {
+        setError('');
+        setText(ev.target.value);
+    }
+
+    const handlesubmit = ev => {
+        // zapobiec domsylnemu zachowaniu
+        ev.preventDefault()
+        // ilosc znakow walidowana
+        if (name.length < 2) {
+            setError("Imię musi mieć minimum 2 znaki");
+            return;
+        }
+
+        if (email.length < 5) {
+            setError("Nie poprawny email");
+            return;
+        }
+        if (text.length < 120) {
+            setError("Tekst musi mieć co najmniej 120 znaków");
+            return;
+        }
+    }
+
     return (
         <Styleddiv id='contact'>
             <div className='div-right'>
                 <Divwithdecoration fontsize='38px' lineheight='55px'>
                     <p>Skontaktuj się z nami</p>
                 </Divwithdecoration>
-                <form>
+                <form onSubmit={handlesubmit}>
                     <div className='name-and-email'>
                         <div className='name-section'>
                             <label htmlFor="name">Wpisz swoje imię <br />
-                                <input type="text" id="name" name="name" placeholder='Krzysztof' />
+                                <input onChange={handlechangename} value={name} type="text" id="name" name="name" placeholder='Krzysztof' />
                             </label>
-                            <p className='error-message'>Error mesage</p>
+                            <p className='error-message'>{error.name}</p>
                         </div>
                         <div className='email-section'>
                             <label htmlFor="email">Wpisz swój email<br />
-                                <input type="email" id="email" name="email" placeholder='abc@xyz.pl' />
+                                <input onChange={handlechangeemail} value={email} type="email" id="email" name="email" placeholder='abc@xyz.pl' />
                             </label>
-                            <p className='error-message'>Error mesage</p>
+                            <p className='error-message'>{error.emial}</p>
                         </div>
                     </div>
                     <div className='message-section'>
                         <label htmlFor="message">Wpisz swoją wiadomość<br />
-                            <textarea id="message" name="message" rows={4} placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' />
+                            <textarea onChange={handlechangetext} value={text} id="message" name="message" rows={4} placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' />
                         </label>
-                        <p className='error-message'>Error mesage</p>
+                        <p className='error-message'>{error.text}</p>
                     </div>
                     <div className='button'>
                         <Button
