@@ -19,6 +19,10 @@ const Styleddiv = styled.div`
         }
         form {
             margin-top: 70px;
+            .error-message {
+                color: red;
+                font-weight: 600;
+            }
             label {
                 font-weight: 600;
             }
@@ -36,17 +40,20 @@ const Styleddiv = styled.div`
             .name-and-email {
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 24px;
                 label {
                     height: 62px;
                     width: 256px;
                     font-size: 16px;
                     line-height: 22px;
-                    margin-bottom: 40px;
                     input {
                         box-sizing: border-box;
                         width: 100%;
                     }
                 }
+            }
+            .message-section {
+                margin-bottom: 24px;
             }
             textarea {
                 width: 100%;
@@ -58,7 +65,6 @@ const Styleddiv = styled.div`
                 border: none;
                 border-bottom: 1px solid #707070;
                 outline: none;
-                margin-bottom: 40px;
                 &::placeholder {
                     color: #3C3C3C26;
                     }
@@ -85,16 +91,25 @@ function Contact() {
                 </Divwithdecoration>
                 <form>
                     <div className='name-and-email'>
-                        <label htmlFor="name">Wpisz swoje imię <br />
-                            <input type="text" id="name" name="name" placeholder='Krzysztof' />
-                        </label><br />
-                        <label htmlFor="email">Wpisz swój email<br />
-                            <input type="email" id="email" name="email" placeholder='abc@xyz.pl' />
-                        </label>
+                        <div className='name-section'>
+                            <label htmlFor="name">Wpisz swoje imię <br />
+                                <input type="text" id="name" name="name" placeholder='Krzysztof' />
+                            </label>
+                            <p className='error-message'>Error mesage</p>
+                        </div>
+                        <div className='email-section'>
+                            <label htmlFor="email">Wpisz swój email<br />
+                                <input type="email" id="email" name="email" placeholder='abc@xyz.pl' />
+                            </label>
+                            <p className='error-message'>Error mesage</p>
+                        </div>
                     </div>
-                    <label htmlFor="message">Wpisz swoją wiadomość<br />
-                        <textarea id="message" name="message" rows={4} placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' />
-                    </label>
+                    <div className='message-section'>
+                        <label htmlFor="message">Wpisz swoją wiadomość<br />
+                            <textarea id="message" name="message" rows={4} placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' />
+                        </label>
+                        <p className='error-message'>Error mesage</p>
+                    </div>
                     <div className='button'>
                         <Button
                             height='50px'
