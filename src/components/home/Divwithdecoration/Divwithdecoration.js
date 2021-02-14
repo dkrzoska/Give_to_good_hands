@@ -4,25 +4,28 @@ import decoration from "../../../assets/Decoration.svg";
 
 const Styleddiv = styled.div`
     {
-    height: 165px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p {
-        display: inline-block;
-    }
-    img {
-        height: 33px;
-        justify-self: flex-end;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 34px;
+        > * {
+            font-size: ${props => props.fontsize};
+            line-height: ${props => props.lineheight};
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        img {
+            height: 33px;
+            justify-self: flex-end;
+        }
     }
 `;
 
 function Divwithdecoration({ children, fontsize, lineheight }) {
     return (
-        <Styleddiv style={{ fontSize: fontsize, lineHeight: lineheight }}>
+        <Styleddiv fontsize= {fontsize} lineheight= {lineheight}>
             {children}
-            <img src={decoration}></img>
+            <img src={decoration} alt='decoration'></img>
         </Styleddiv>
     )
 }
