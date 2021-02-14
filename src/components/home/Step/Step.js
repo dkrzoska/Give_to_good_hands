@@ -8,7 +8,7 @@ const Styledstep = styled.div`
         align-items: center;
         font-size: ${props => props.fontsizeh6};
         line-height: ${props => props.lineheighth6};
-        margin: 0 86px;
+        margin: 0 80px;
         h6 {
             text-align: center;
             margin: 8px 0;
@@ -20,7 +20,7 @@ const Styledstep = styled.div`
             margin-top: 10px;
         }
         div {
-            width: 70px;
+            width: 170px;
             border-top: solid 1px #707070;
         }
     }

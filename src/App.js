@@ -11,7 +11,8 @@ import { BrowserRouter, HashRouter, Route, Switch, Link } from 'react-router-dom
 
 const Styledcontainer = styled.div`
     {
-      width: 100vw;
+      width: 90vw;
+      margin: 0 auto;
     }
 `;
 

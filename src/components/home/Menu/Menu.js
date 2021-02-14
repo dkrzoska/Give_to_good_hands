@@ -6,7 +6,7 @@ import { colors } from '../../settings/settings';
 const Styledmenu = styled.div`
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 210px;
+    margin-bottom: 110px;
 `;
 
 const buttonprops = {

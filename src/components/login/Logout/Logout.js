@@ -9,7 +9,8 @@ import { colors } from '../../settings/settings';
 
 const Styleddiv = styled.div`
 {
-    width: 1858px;
+    width: 90vw;
+    margin: 0 auto;
     .logout {
         display: flex;
         flex-direction: column;

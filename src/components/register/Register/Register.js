@@ -9,11 +9,12 @@ import { colors } from '../../settings/settings';
 
 const Styleddiv = styled.div`
 {
-    width: 1858px;
+    width: 90vw;
+    margin: 0 auto;
     .login-main {
         width: 515px;
         margin: 0 auto;
-        margin-top: 60px;
+        margin-top: 10px;
     }
     .login-and-pass {
         box-sizing: border-box;
