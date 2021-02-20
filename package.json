@@ -1,5 +1,6 @@
 {
   "name": "give_to_good_hands",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
